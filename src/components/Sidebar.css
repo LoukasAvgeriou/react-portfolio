@@ -1,0 +1,53 @@
+.sidebar {
+    width: 250px;
+    background-color: #222;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.avatar-box img {
+    border-radius: 50%;
+}
+
+.info-content {
+    text-align: center;
+}
+
+.download-cv {
+    background-color: #ff9800;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.contacts-list,
+.social-list {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-item,
+.social-item {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.icon-box {
+    width: 30px;
+}
+
+.contact-link,
+.social-link {
+    color: white;
+    text-decoration: none;
+}
+
+.social-link i {
+    font-size: 20px;
+}
