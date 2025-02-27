@@ -1,5 +1,6 @@
 import "./Sidebar.css";
 import photo from '../assets/loukas.jpg';
+import { FaEnvelope, FaPhone } from "react-icons/fa";
 
 export default function Sidebar() {
     return (
@@ -18,7 +19,7 @@ export default function Sidebar() {
                 <ul className='contacts-list'>
                     <li className='contact-item'>
                         <div className='icon-box'>
-                            <i className='fas fa-envelope'></i>
+                            <i className='fas fa-envelope'><FaEnvelope /></i>
                         </div>
                         <div className='contact-info'>
                             <p className='contact-title'>EMAIL</p>
@@ -27,7 +28,7 @@ export default function Sidebar() {
                     </li>
                     <li>
                         <div className='icon-box'>
-                            <i className='fas fa-phone-alt'></i>
+                            <i className='fas fa-phone-alt'><FaPhone /></i>
                         </div>
                         <div className='contact-info'>
                             <p className='contact-title'>PHONE</p>
