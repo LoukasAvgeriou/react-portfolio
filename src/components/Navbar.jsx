@@ -1,24 +1,18 @@
 import "./Navbar.css";
 
-export default function Navbar() {
+export default function Navbar({ setCurrentPage }) {
     return (
-        <>
-            <nav className="navbar">
-                <ul className="navbar-list">
-                    <li className="navbar-item">
-                        <a href="/" className="navbar-link active">About</a>
-                    </li>
-                    <li className="navbar-item">
-                        <a href="/resume" className="navbar-link">Resume</a>
-                    </li>
-                    <li className="navbar-item">
-                        <a href="/portfolio" className="navbar-link">Portfolio</a>
-                    </li>
-                    <li className="navbar-item">
-                        <a href="/contact" className="navbar-link">Contact</a>
-                    </li>
-                </ul>
-            </nav>
-        </>
-    )
+        <nav className="navbar">
+            <ul className="navbar-list">
+                <li className="navbar-item">
+                    <button className="navbar-link" onClick={() => setCurrentPage("about")}>About</button>
+                </li>
+
+                <li className="navbar-item">
+                    <button className="navbar-link" onClick={() => setCurrentPage("portfolio")}>Portfolio</button>
+                </li>
+
+            </ul>
+        </nav>
+    );
 }
