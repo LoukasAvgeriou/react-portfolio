@@ -1,11 +1,18 @@
+body {
+    background-color: #001b1a;
+    font-family: Arial;
+}
+
 /* General Layout */
 .app-container {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    gap: 50px;
-    margin: 50px auto;
-    max-width: 1200px;
+    gap: 20px;
+    max-width: 1250px;
+    margin: 30px auto;
+    border-radius: 12px;
+    padding: 40px;
 }
 
 /* Sidebar */
@@ -13,7 +20,7 @@
     width: 250px;
     background-color: #222;
     color: white;
-    padding: 20px;
+    padding: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -23,7 +30,8 @@
 
 /* Main Content Box */
 .main-content {
-    width: 700px;
+    flex: 1;
+    min-width: 700px;
     background-color: #1e1e1e;
     color: white;
     padding: 20px;
@@ -38,30 +46,6 @@
     justify-content: flex-end;
     align-items: center;
     padding: 10px;
-}
-
-.navbar-list {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-    padding: 0;
-}
-
-.navbar-item {
-    position: relative;
-}
-
-.navbar-link {
-    text-decoration: none;
-    color: white;
-    font-size: 18px;
-    padding: 10px 15px;
-    transition: color 0.3s ease-in-out;
-}
-
-.navbar-link:hover,
-.navbar-link.active {
-    color: #00aaff;
 }
 
 /* Page Title */

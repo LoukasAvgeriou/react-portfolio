@@ -1,5 +1,7 @@
+/* Sidebar Styling */
 .sidebar {
-    width: 250px;
+    width: 300px;
+    /* Adjusted sidebar width */
     background-color: #222;
     color: white;
     padding: 20px;
@@ -8,46 +10,141 @@
     align-items: center;
 }
 
+/* Avatar */
 .avatar-box img {
     border-radius: 50%;
 }
 
+/* Name & CV Button Section */
 .info-content {
     text-align: center;
 }
 
+/* 🔵 Stylish "Download CV" Button (Smaller & 3D Effect) */
 .download-cv {
-    background-color: #ff9800;
+    background: linear-gradient(135deg, #007bff, #00d4ff);
     color: white;
     border: none;
-    padding: 8px 15px;
-    margin-top: 10px;
+    padding: 5px 10px;
+    /* Smaller size */
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 6px;
     cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3);
+    text-transform: uppercase;
 }
 
-.contacts-list,
+.download-cv:hover {
+    background: linear-gradient(135deg, #ff4b4b, #ff0000);
+    transform: translateY(-2px);
+    box-shadow: 0px 6px 12px rgba(255, 0, 0, 0.4);
+}
+
+/* 🔳 Separator Line Below CV Button */
+.separator {
+    width: 100%;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 15px 0;
+}
+
+/* 🔵 Contact List - Icons are Blue, Items are Stacked */
+.contacts-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* Contact Item */
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* 🔵 Contact Icons (No Square Background) */
+.icon-box {
+    width: 30px;
+    /* Same height as text */
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #00aaff;
+    /* Blue border */
+    border-radius: 4px;
+    /* Slightly rounded edges */
+}
+
+.icon-box svg {
+    font-size: 16px;
+    color: #00aaff;
+}
+
+/* Contact Text */
+.contact-title {
+    font-size: 12px;
+    font-weight: bold;
+    color: #ccc;
+    margin: 0;
+}
+
+/* Reduce Gap Between Contact Text */
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    /* Makes the lines closer */
+}
+
+/* Contact Link */
+.contact-link {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.contact-link:hover {
+    color: #00d4ff;
+}
+
+/* 🌍 Location Styling */
+.location {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 10px;
+    color: #00aaff;
+    font-size: 14px;
+}
+
+.location-icon {
+    font-size: 18px;
+}
+
+/* 🔵 Social Icons (Bigger & Side by Side) */
 .social-list {
     list-style: none;
     padding: 0;
-}
-
-.contact-item,
-.social-item {
     display: flex;
-    align-items: center;
-    margin-top: 10px;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 15px;
 }
 
-.icon-box {
-    width: 30px;
+/* Social Icons Hover Effect */
+.social-link svg {
+    font-size: 30px;
+    color: #00aaff;
+    transition: transform 0.3s ease, text-shadow 0.3s ease;
 }
 
-.contact-link,
-.social-link {
-    color: white;
-    text-decoration: none;
-}
-
-.social-link i {
-    font-size: 20px;
+.social-link:hover svg {
+    transform: scale(1.2);
+    text-shadow: 0px 0px 10px rgba(0, 170, 255, 0.8);
 }

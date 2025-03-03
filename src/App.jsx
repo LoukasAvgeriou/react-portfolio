@@ -1,8 +1,8 @@
 import { useState } from 'react'
-import Sidebar from './components/Sidebar'
-import Navbar from './components/Navbar'
-import About from './components/About'
-import Portfolio from './components/portfolio'
+import Sidebar from './components/Sidebar.jsx'
+import Navbar from './components/Navbar.jsx'
+import About from './components/About.jsx'
+import Projects from './components/Projects.jsx'
 import './styles.css'
 
 
@@ -12,7 +12,7 @@ export default function App() {
   const renderPage = () => {
     if (currentPage === "about") return <About />;
 
-    if (currentPage === "portfolio") return <Portfolio />;
+    if (currentPage === "portfolio") return <Projects />;
 
   };
 
