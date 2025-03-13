@@ -1,26 +1,24 @@
 import "./Projects.css";
+import itchioPic from "../assets/itchio.png";
+import aicookPic from "../assets/aicook.png";
+
 
 const projects = [
     {
         id: 1,
-        title: "Number Grid Puzzle",
-        description: "A Unity puzzle game where numbers add up to 10 to disappear.",
-        image: "number-grid.png", // Add the image in the public folder or assets
-        link: "https://github.com/yourusername/number-grid-puzzle"
+        title: "Itch.io Page",
+        description: "In my itch.io page, you can find my game projects",
+        image: itchioPic,
+        siteLink: "https://github.com/yourusername/number-grid-puzzle",  // No site link
+        githubLink: null
     },
     {
         id: 2,
-        title: "Tribe Totem Spirit",
-        description: "A game jam project where you play as a spirit guiding a tribe.",
-        image: "tribe-totem.png",
-        link: "https://yourgamejamproject.com"
-    },
-    {
-        id: 3,
-        title: "Portfolio Website",
-        description: "My personal portfolio built with React and custom CSS.",
-        image: "portfolio-site.png",
-        link: "https://github.com/yourusername/portfolio"
+        title: "AI Cook page",
+        description: "A page where a recipe search engine that uses machine learning to recommend recipes based on ingredients you provide",
+        image: aicookPic,
+        siteLink: null,
+        githubLink: "https://yourgamejamproject.com"
     }
 ];
 
@@ -34,9 +32,20 @@ export default function Projects() {
                         <img src={project.image} alt={project.title} className="project-image" />
                         <h3 className="project-name">{project.title}</h3>
                         <p className="project-description">{project.description}</p>
-                        <a href={project.link} target="_blank" rel="noopener noreferrer" className="project-link">
-                            View Project
-                        </a>
+
+                        {/* Conditionally render buttons */}
+                        <div className="project-buttons">
+                            {project.siteLink && (
+                                <a href={project.siteLink} target="_blank" rel="noopener noreferrer" className="project-link">
+                                    Visit Site
+                                </a>
+                            )}
+                            {project.githubLink && (
+                                <a href={project.githubLink} target="_blank" rel="noopener noreferrer" className="project-link github">
+                                    View on GitHub
+                                </a>
+                            )}
+                        </div>
                     </div>
                 ))}
             </div>

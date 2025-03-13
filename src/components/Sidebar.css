@@ -10,9 +10,35 @@
     align-items: center;
 }
 
+.sidebar-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 /* Avatar */
+
+/* Centering the avatar */
+.avatar-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+
+}
+
 .avatar-box img {
     border-radius: 50%;
+    display: block;
+    /* Ensures no extra space */
+
+    width: 100px;
+    /* Adjust to desired size */
+    height: 100px;
+    /* Ensure it's a perfect circle */
+    object-fit: cover;
+    /* Keeps proportions without distortion */
 }
 
 /* Name & CV Button Section */
@@ -20,7 +46,7 @@
     text-align: center;
 }
 
-/* 🔵 Stylish "Download CV" Button (Smaller & 3D Effect) */
+/* Stylish "Download CV" Button (Smaller & 3D Effect) */
 .download-cv {
     background: linear-gradient(135deg, #007bff, #00d4ff);
     color: white;
