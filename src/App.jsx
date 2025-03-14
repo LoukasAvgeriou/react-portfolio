@@ -17,21 +17,20 @@ export default function App() {
   };
 
   return (
-    <div className="app-container">
-      <Sidebar />
-      <div className="main-content">
-        <div className='header-container'>
-          <h1 className="page-title">
-            {currentPage.charAt(0).toUpperCase() + currentPage.slice(1)}
-          </h1>
-          <Navbar setCurrentPage={setCurrentPage} currentPage={currentPage} />
-
-
+    <>
+      <div className="app-container">
+        <Sidebar />
+        <div className="main-content">
+          <div className='header-container'>
+            <h1 className="page-title">
+              {currentPage.charAt(0).toUpperCase() + currentPage.slice(1)}
+            </h1>
+            <Navbar setCurrentPage={setCurrentPage} currentPage={currentPage} />
+          </div>
+          {renderPage()}
         </div>
-        {renderPage()}
       </div>
-
-    </div>
+    </>
   );
 }
 
