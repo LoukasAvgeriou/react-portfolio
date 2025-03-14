@@ -5,6 +5,24 @@
     /* Bigger text */
 }
 
+.about-title {
+    text-align: left;
+}
+
+.about-text {
+    text-align: left;
+    margin-top: 20px;
+}
+
+.highlight {
+    font-size: 1.2em;
+    /* Bigger text */
+    color: #00aaff;
+    /* Change color */
+    font-weight: bold;
+    /* Optional: Make it bold */
+}
+
 .tabs {
     display: flex;
     justify-content: center;

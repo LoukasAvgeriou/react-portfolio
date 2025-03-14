@@ -6,20 +6,22 @@ import aicookPic from "../assets/aicook.png";
 const projects = [
     {
         id: 1,
-        title: "Itch.io Page",
-        description: "In my itch.io page, you can find my game projects",
-        image: itchioPic,
-        siteLink: "https://github.com/yourusername/number-grid-puzzle",  // No site link
-        githubLink: null
-    },
-    {
-        id: 2,
         title: "AI Cook page",
         description: "A page where a recipe search engine that uses machine learning to recommend recipes based on ingredients you provide",
         image: aicookPic,
         siteLink: null,
-        githubLink: "https://yourgamejamproject.com"
+        githubLink: "https://github.com/LoukasAvgeriou/ai-recipes"
+    },
+    {
+        id: 2,
+        title: "Itch.io Page",
+        description: "In my itch.io page, you can find my game projects",
+        image: itchioPic,
+        siteLink: "https://loukas-avgeriou.itch.io/",
+        githubLink: null
     }
+
+
 ];
 
 export default function Projects() {

@@ -1,6 +1,7 @@
 import "./Sidebar.css";
 import photo from '../assets/loukas.jpg';
-import { FaEnvelope, FaPhone, FaGithub, FaLinkedin, FaMapMarkedAlt } from "react-icons/fa";
+import { FaEnvelope, FaPhone, FaGithub, FaLinkedin, FaMapMarker } from "react-icons/fa";
+import CV from '../assets/Loukas_Avgeriou_CV.pdf';
 
 export default function Sidebar() {
     return (
@@ -11,7 +12,9 @@ export default function Sidebar() {
                 </figure>
                 <div className="info-content">
                     <h1 className="name">Loukas Avgeriou</h1>
-                    <button className="download-cv">Download CV</button>
+                    <button className="download-cv">
+                        <a href={CV} target="_blank">Download CV</a>
+                    </button>
                     <div className='separator'></div>
                 </div>
             </div>
@@ -37,23 +40,23 @@ export default function Sidebar() {
                 </li>
                 <li className="contact-item">
                     <div className="icon-box">
-                        <FaMapMarkedAlt />
+                        <FaMapMarker />
                     </div>
                     <div className="contact-info">
                         <p className="contact-title">LOCATION</p>
-                        <a className="contact-link">EU Citizen</a>
+                        <p className="contact-title">EU Citizen</p>
                     </div>
                 </li>
             </ul>
 
             <ul className="social-list">
                 <li className="social-item">
-                    <a href="https://github.com/LoukasAvgeriou" className="social-link">
+                    <a href="https://github.com/LoukasAvgeriou" target="_blank" className="social-link">
                         <FaGithub />
                     </a>
                 </li>
                 <li className="social-item">
-                    <a href="https://www.linkedin.com/in/loukasavgeriou/" className="social-link">
+                    <a href="https://www.linkedin.com/in/loukasavgeriou/" target="_blank" className="social-link">
                         <FaLinkedin />
                     </a>
                 </li>
