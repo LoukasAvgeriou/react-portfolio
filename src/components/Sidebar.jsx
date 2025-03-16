@@ -61,6 +61,6 @@ export default function Sidebar() {
                     </a>
                 </li>
             </ul>
-        </aside>
+        </aside >
     )
 }

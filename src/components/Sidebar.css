@@ -28,6 +28,10 @@
 
 }
 
+.name {
+    font-size: 26px;
+}
+
 .avatar-box img {
     border-radius: 50%;
     display: block;
@@ -51,9 +55,9 @@
     background: linear-gradient(135deg, #007bff, #00d4ff);
     color: white;
     border: none;
-    padding: 5px 10px;
+    padding: 6px 12px;
     /* Smaller size */
-    font-size: 12px;
+    font-size: 15px;
     font-weight: bold;
     border-radius: 6px;
     cursor: pointer;
@@ -63,9 +67,9 @@
 }
 
 .download-cv:hover {
-    background: linear-gradient(135deg, #ff4b4b, #ff0000);
+    background: linear-gradient(135deg, #62f162, #00b82e);
     transform: translateY(-2px);
-    box-shadow: 0px 6px 12px rgba(255, 0, 0, 0.4);
+    box-shadow: 0px 6px 12px rgba(5, 129, 11, 0.39);
 }
 
 .download-cv a {

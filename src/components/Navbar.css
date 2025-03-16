@@ -40,6 +40,5 @@
 .navbar-link.active {
     background: #00aaff;
     color: white;
-    font-weight: bold;
     box-shadow: 0 2px 5px rgba(0, 170, 255, 0.4);
 }
