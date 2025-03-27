@@ -1,6 +1,7 @@
 import "./Projects.css";
 import itchioPic from "../assets/itchio.png";
 import aicookPic from "../assets/aicook.png";
+import minesweeperPic from "../assets/minesweeper.png"
 
 
 const projects = [
@@ -14,12 +15,21 @@ const projects = [
     },
     {
         id: 2,
+        title: "Minesweeper",
+        description: "Minesweeper game made in React",
+        image: minesweeperPic,
+        siteLink: "https://loukasavgeriou.github.io/minesweeper/",
+        githubLink: "https://github.com/LoukasAvgeriou/minesweeper"
+    },
+    {
+        id: 3,
         title: "Itch.io Page",
         description: "In my itch.io page, you can find my game projects",
         image: itchioPic,
         siteLink: "https://loukas-avgeriou.itch.io/",
         githubLink: null
     }
+
 
 
 ];
@@ -36,7 +46,7 @@ export default function Projects() {
                         <p className="project-description">{project.description}</p>
 
                         {/* Conditionally render buttons */}
-                        <div className="project-buttons">
+                        <div className="project-buttons-portfolio">
                             {project.siteLink && (
                                 <a href={project.siteLink} target="_blank" rel="noopener noreferrer" className="project-link">
                                     Visit Site
