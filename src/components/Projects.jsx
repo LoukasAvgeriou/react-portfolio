@@ -1,12 +1,20 @@
 import "./Projects.css";
 import itchioPic from "../assets/itchio.png";
 import aicookPic from "../assets/aicook.png";
-import minesweeperPic from "../assets/minesweeper.png"
-
+import minesweeperPic from "../assets/minesweeper.png";
+import expenseTrackerPic from "../assets/expenseTracker.png";
 
 const projects = [
     {
         id: 1,
+        title: "Expense Tracker",
+        description: "A page to track and monitor your expenses!",
+        image: expenseTrackerPic,
+        siteLink: "https://loukasavgeriou.github.io/expense-tracker/",
+        githubLink: "https://github.com/LoukasAvgeriou/expense-tracker"
+    },
+    {
+        id: 2,
         title: "AI Cook page",
         description: "A page where a recipe search engine that uses machine learning to recommend recipes based on ingredients you provide",
         image: aicookPic,
@@ -14,7 +22,7 @@ const projects = [
         githubLink: "https://github.com/LoukasAvgeriou/ai-recipes"
     },
     {
-        id: 2,
+        id: 3,
         title: "Minesweeper",
         description: "Minesweeper game made in React",
         image: minesweeperPic,
@@ -22,7 +30,7 @@ const projects = [
         githubLink: "https://github.com/LoukasAvgeriou/minesweeper"
     },
     {
-        id: 3,
+        id: 4,
         title: "Itch.io Page",
         description: "In my itch.io page, you can find my game projects",
         image: itchioPic,
